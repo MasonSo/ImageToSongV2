@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script type="module" src="/script.js"></script>
+    <title>Image Analysis & Song Recommendation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome. You pick an image, I'll pick a song.</h1>
+        <button id="selbtn">Image</button>
+
+        <label id="proglab" style="display: none;"></label>
+        <input type="text" id="namebox" readonly style="display: none;">
+        <img id="myImg" alt="Selected image" style="display: none;">
+
+        <h2 id="recommendationText" style="display: none;">Interesting...</h2>
+        <div id="songRecommendation" style="display: none;"></div>
+
+        <h2 id="satisfiedText" style="display: none;">Satisfied?</h2>
+<div id="satisfiedButtons" style="display: none;">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+    <button id="oneMoreBtn">Another Song</button>
+</div>
+
+    </div>
+</body>
+
+</html>

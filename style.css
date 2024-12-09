@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    color: white;
+ 
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 20px;  /* Add padding to create space around the content */
+    background-color: black;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+img {
+    width: 30%;
+    max-width: 30%;
+    margin: 1vw 0;
+}
+
+h1{
+    margin-top:10vh;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #a94dff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6f44a6;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#songRecommendation {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+#myImg {
+    max-width: 80%;  /* Limit the size */
+    height: auto;
+    display: block;  /* Makes it block-level to use margin */
+    margin: 20px auto;  /* Centers the image */
+}
+
+#recommendationText {
+    color: white;
+    font-size: 1.5vw;
+}
+
+#songRecommendation p {
+    font-size: 2vw; /* Adjust the font size to your liking */
+}
+
+
+.loader {
+    border: 1vh solid #f3f3f3; /* Light gray border */
+    border-top: 1vh solid #6f44a6; /* Blue color for the spinning part */
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    animation: spin 2s linear infinite; /* Spin animation */
+    margin: 20px auto; /* Center the spinner */
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
